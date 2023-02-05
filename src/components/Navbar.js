@@ -15,16 +15,16 @@ const Navbar = () => {
             {/* <Button className='menu-control-container'></Button> */}
         </div>
         <Menu theme='dark'>
-            <Menu.Item icom={<HomeOutlined />}>
+            <Menu.Item key='home' icom={<HomeOutlined />}>
                 <Link to='/'>Home</Link>
             </Menu.Item>
-            <Menu.Item icom={<FundOutlined />}>
+            <Menu.Item key='cryptocurencies' icom={<FundOutlined />}>
                 <Link to='/cryptocurrencies'>Cryptocurrencies</Link>
             </Menu.Item>
-            <Menu.Item icom={<MoneyCollectOutlined />}>
+            <Menu.Item key='exchanges' icom={<MoneyCollectOutlined />}>
                 <Link to='/exchanges'>Exchanges</Link>
             </Menu.Item>
-            <Menu.Item icom={<BulbOutlined />}>
+            <Menu.Item key='news' icom={<BulbOutlined />}>
                 <Link to='/news'>News</Link>
             </Menu.Item>
         </Menu>
